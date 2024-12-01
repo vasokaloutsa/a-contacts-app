@@ -4,7 +4,7 @@ import React from "react";
 import { Footer } from "./components/Footer/Footer.tsx";
 import { Header } from "./components/Header/Header.tsx";
 import UserInfoCards from "./components/UserInfoCards/UserInfoCards.tsx";
-import styles from "./App.css";
+import styles from "./App.module.css";
 
 function App() {
   return (

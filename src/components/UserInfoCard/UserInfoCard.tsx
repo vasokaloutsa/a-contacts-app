@@ -20,11 +20,11 @@ const UserInfoCard = ({ name, companyName, email }) => {
     <div className={styles.wrapper} onClick={handleOpen}>
       <p className={styles.title}>{name}</p>
       <p className={styles.info}>
-        <span>Company:</span>
+        <span>Company: </span>
         <span>{companyName}</span>
       </p>
       <p className={styles.info}>
-        <span>Email:</span>
+        <span>Email: </span>
         <span>{email}</span>
       </p>
       <div className={styles.icon}>

@@ -12,16 +12,13 @@
   padding: 20px;
 }
 
-.title {
+.title,
+.info span:nth-child(2) {
   font-weight: 600;
 }
 
 .info {
   color: hsl(229, 6%, 66%);
-}
-
-.info:nth-child(2) {
-  font-weight: 600;
 }
 
 .icon {
