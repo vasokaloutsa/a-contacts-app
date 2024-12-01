@@ -9,6 +9,7 @@
   cursor: pointer;
   height: 200px;
   width: 400px;
+  min-width: 300px;
   padding: 20px;
 }
 
@@ -18,11 +19,17 @@
 }
 
 .info {
+  text-align: start;
   color: hsl(229, 6%, 66%);
+  width: 100%;
+  white-space: nowrap;
+}
+
+p.info {
+  margin-top: -10px;
 }
 
 .icon {
   align-self: flex-end;
   justify-self: flex-end;
-  margin: 0 20px 20px;
 }
