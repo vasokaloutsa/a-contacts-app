@@ -1,0 +1,31 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0px 5px 10px 0 hsl(229, 6%, 66%);
+  border-top: 2px solid hsl(180, 62%, 55%);
+  cursor: pointer;
+  height: 200px;
+  width: 400px;
+  padding: 20px;
+}
+
+.title {
+  font-weight: 600;
+}
+
+.info {
+  color: hsl(229, 6%, 66%);
+}
+
+.info:nth-child(2) {
+  font-weight: 600;
+}
+
+.icon {
+  align-self: flex-end;
+  justify-self: flex-end;
+  margin: 0 20px 20px;
+}
