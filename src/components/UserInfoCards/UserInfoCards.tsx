@@ -3,20 +3,11 @@ import UserInfoCard from "../UserInfoCard/UserInfoCard.tsx";
 import { getUsers } from "../../services/getUsers.ts";
 import UserInfoModal from "../UserInfoModal/UserInfoModal.tsx";
 import styles from "./UserInfoCards.module.css";
-
-type CompanyData = {
-  name: string;
-};
-
-interface UserCardData {
-  email: string;
-  name: string;
-  company: CompanyData;
-}
+import UserData from "../../types/types.ts";
 
 const UserInfoCards = () => {
   const [users, setUsers] = useState([]);
-  const [selectedUser, setSelectedUser] = useState(false);
+  const [selectedUser, setSelectedUser] = useState({});
   const [openModal, setOpenModal] = useState(false);
 
   const handleOpen = (user) => {
@@ -38,7 +29,7 @@ const UserInfoCards = () => {
   return (
     <div className={styles.wrapper}>
       {users?.length ? (
-        users.map((user: UserCardData) => (
+        users.map((user: UserData) => (
           <UserInfoCard key={user.email} user={user} handleOpen={handleOpen} />
         ))
       ) : (
